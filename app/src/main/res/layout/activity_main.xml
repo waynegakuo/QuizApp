@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/qn_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="1. When did Kenya gain independence?"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/choice_1957"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1957"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_1964"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1964"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_1963"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1963"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_1994"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1994"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="2. Who was the first President of Kenya?"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/choice_moi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daniel Torotich Arap Moi"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_kenyatta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Uhuru Muigai Kenyatta"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_jomo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mzee Jomo Kenyatta"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_kibaki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mwai Emilio Kibaki"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="3. Which is the second largest city in Kenya?"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/choice_nairobi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nairobi"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_kakamega"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kakamega"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_kisumu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kisumu"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_mombasa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mombasa"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="4. Who have ever been the Prime Ministers of Kenya? (Check boxes)"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/choice_mwai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Mwai Kibaki" />
+
+                <CheckBox
+                    android:id="@+id/choice_arap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Daniel Torotich Arap Moi" />
+
+                <CheckBox
+                    android:id="@+id/choice_raila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Raila Odinga" />
+
+                <CheckBox
+                    android:id="@+id/choice_mzee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Mzee Jomo Kenyatta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="5. When was the Constitution amended?"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/choice_2010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2010"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_2007"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2007"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_2008"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2008"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_2012"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2012"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="6. Which is City is known as the “The land of Salt and Spices”?"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/choice_ksm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kisumu"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_mld"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Malindi"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_msa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mombasa"
+                        android:onClick="onRadioButtonClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/choice_lm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lamu"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="7. List one Kenya’s national language that you know? "
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/user_input"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Name"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:onClick="submitQuiz"/>
+                <Button
+                    android:id="@+id/reveal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="16dp"
+                    android:text="Reveal Answers"
+                    android:textStyle="bold"
+                    android:onClick="revealAnswers"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:id="@+id/ans_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
