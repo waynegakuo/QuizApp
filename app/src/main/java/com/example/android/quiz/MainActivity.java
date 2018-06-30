@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     /*
-    Handles revealing of answers
+    Handles revealing of answers upon clicked by user
      */
     public void revealAnswers(View view){
         String priceMessage="Answers: ";
